@@ -6,6 +6,8 @@
 
 env_name="molecular_nn_env"
 
+source ~/miniconda3/bin/activate
+
 conda create -n $env_name
 conda activate $env_name
 

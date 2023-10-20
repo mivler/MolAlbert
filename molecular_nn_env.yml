@@ -80,8 +80,8 @@ dependencies:
   - libbrotlienc=1.0.9=h5eee18b_7
   - libcublas=11.10.3.66=0
   - libcufft=10.7.2.124=h4fbf590_0
-  - libcufile=1.7.2.10=0
-  - libcurand=10.3.3.141=0
+  - libcufile=1.8.0.34=0
+  - libcurand=10.3.4.52=0
   - libcurl=8.4.0=h251f7ec_0
   - libcusolver=11.4.0.1=0
   - libcusparse=11.7.4.91=0
