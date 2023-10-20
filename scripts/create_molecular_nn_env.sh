@@ -17,5 +17,6 @@ conda install -c conda-forge rdkit
 conda install -c huggingface datasets
 conda install -c huggingface transformers==4.14.1 tokenizers==0.10.3
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+conda install -c anaconda pytest
 
 conda env export > ${env_name}.yml
