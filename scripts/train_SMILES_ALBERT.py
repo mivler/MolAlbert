@@ -47,7 +47,7 @@ def main():
         """
         Function to tokenize input strings, padding to be equal length, and truncating if too long. Tokenized tensors are pytorch tensors.
 
-        Arguments
+        Parameters
         ---------
             examples - (datasets.Dataset) A batch of the dataset being tokenized
 

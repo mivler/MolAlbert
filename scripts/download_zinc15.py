@@ -17,11 +17,16 @@ def main():
     parser.add_argument("-s", "--size", default="250K")
     args = parser.parse_args()
 
+    # Grab size and define outpath directory for data
     size = args.size
+    outpath = os.path.join("data", f"zinc15_molnet_{size}")
 
     # Download zinc15 dataset of appropriate size
     featurizer = dc.feat.DummyFeaturizer()
-    db = dc.molnet.load_zinc15(featurizer=featurizer, data_dir=os.path.join("data", f"zinc15_molnet_{size}"), dataset_size=size)
+    print(f"downloading to {outpath}")
+    # NOTE: This will now work if there is any version of the zinc15 data in your /tmp directory 
+    # This includes raw or processed data
+    db = dc.molnet.load_zinc15(featurizer=featurizer, data_dir=outpath, dataset_size=size)
 
 
 if __name__ == "__main__":
